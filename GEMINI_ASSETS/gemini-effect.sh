@@ -1,12 +1,5 @@
 #!/bin/bash
 
-# Check if gemini is installed
-if ! command -v gemini &> /dev/null; then
-    echo "Error: gemini cli is not installed or not in PATH."
-    echo "Please install it: npm install -g @google/gemini-cli"
-    exit 1
-fi
-
 # Get the directory where this script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # Get the repository root (one level up from GEMINI_ASSETS)
